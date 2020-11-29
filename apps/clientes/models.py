@@ -28,8 +28,7 @@ class dato(models.Model):
     direccion = models.TextField()
     telefono = models.CharField(max_length=20)
     email = models.EmailField()
-    #persona = models.ForeignKey(persona, null = True, blank= True, on_delete = models.CASCADE)
-    #antecedentes_medico = models.ManyToManyField(antecedentes_medico)
+    
 
     def __str__(self) -> str:
         return self.nombres + '  ' + self.apellidos + ' - ' + str(self.codigo)
